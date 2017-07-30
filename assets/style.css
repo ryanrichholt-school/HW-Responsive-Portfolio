@@ -1,0 +1,219 @@
+body {
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	text-align: center;
+	color: #777777;
+	background-color: #ffffff;
+	background-image: url('gaming-pattern/gaming-pattern.png');
+	background-repeat: repeat;
+}
+	
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Georgia', Times, 'Times New Roman', serif;
+}
+
+section, footer {
+	display: block;
+	clear: both;
+}
+
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+/* Navbar */
+.my-navbar {
+	overflow: hidden;
+	background-color: white;
+	border-bottom: 2px solid lightgrey;
+}
+
+.my-navbar-title {
+	float: left;
+	font-size: 48px;
+	padding: 30px;
+	background-color: #4aaaa5;
+	color: white;
+}
+
+.my-navbar-links {
+	float: right;
+	padding: 40px;
+	color: lightgrey;
+}
+
+.my-navbar-links a {
+	color: grey;
+}
+
+/* Content */
+.main {
+	overflow: hidden;
+	padding-bottom: 300px;
+	line-height: 1.5;
+}
+
+.main h1 {
+	color: #4aaaa5;
+	font-size: 36px;
+}
+
+.main h2 {
+	color: #4aaaa5;
+	font-size: 24px;
+}
+
+.panel {
+	border: 1px solid lightgrey;
+	box-sizing: border-box;
+	margin: 2.5%;;
+	padding: 20px;
+}
+
+.main .content {
+	overflow: hidden;
+	background-color: white;
+	text-align: left;
+	float: left;
+	clear: none;
+	width: 60%;
+}
+
+.main .aside {
+	background-color: white;
+	float: left;
+	clear: none;
+	width: 32.5%;
+}
+
+.profile-img {
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.connect-button {
+	height: 50px;
+	width: 50px;
+}
+
+
+/* Portfolio */
+table, td {
+	overflow: auto;
+    padding: 15px;
+}
+
+.portfolio-image {
+	float: left;
+	position: relative;
+	margin: 2.5%;
+	width: 45%;
+}
+.portfolio-image img {
+	display: block; 
+	width: 100%; 
+	height: auto;
+}
+
+.portfolio-image h3 {
+	position: absolute;
+	box-sizing: border-box;
+	color: white;
+	padding: 10px;
+	text-align: center;
+	background-color: #4aaaa5;
+	width: 100%;
+	bottom: 10px;
+}
+
+/* Form */
+.form-input {
+	font-size: 24px;
+	width: 100%;
+}
+
+#message-input {
+	height: 300px;
+}
+
+/* Footer */
+.my-footer {
+	border-top: 6px solid #4aaaa5;
+	position: fixed;
+  	right: 0;
+  	bottom: 0;
+  	left: 0;
+  	background-color: #666666;
+  	text-align: center;
+}
+
+.my-footer p {
+	padding: 30px;
+	color: lightgrey;
+}
+
+
+/* media queries */
+
+@media (min-width: 980px) {
+	.main .aside {
+		margin-left: 0;
+	}
+}
+
+@media (max-width: 980px) {
+	.container {
+		max-width: 960px;
+
+	}
+
+	.main .content {
+		width: 95%;
+		float: none;
+	}
+	
+	.main .aside {
+		width: 95%;
+		float: none;
+	}
+
+	.portfolio-image {
+		float: none;
+		width: 95%;
+	}
+}
+
+
+@media (max-width: 768px) {
+	.container {
+		max-width: 768px;
+	}
+	
+	.profile-img {
+		width: 100%;
+		float: none;
+	}
+
+}
+
+@media (max-width: 640px) {
+	.container {
+		max-width: 640px;
+	}
+
+	.my-navbar-title {
+		float: none;
+		padding: 5px
+	}
+
+	.my-navbar-links {
+		float: none;
+		padding: 5px;
+	}
+
+	
+
+}
+
